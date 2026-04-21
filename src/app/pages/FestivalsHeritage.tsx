@@ -74,6 +74,13 @@ export function FestivalsHeritage() {
       intro: "Celebrated on the ninth day of the ninth lunar month with mountain climbing, chrysanthemum appreciation, and respect for elders.",
     },
     {
+      id: "tea-ceremony",
+      category: "heritage",
+      title: "Tea Ceremony Tradition",
+      image: heritageImage3,
+      intro: "Refined practice of preparing and serving tea, embodying harmony, respect, and tranquility in Chinese culture.",
+    },
+    {
       id: "forbidden-city",
       category: "heritage",
       title: "The Forbidden City",
@@ -86,13 +93,6 @@ export function FestivalsHeritage() {
       title: "Chinese Calligraphy",
       image: heritageImage2,
       intro: "Ancient art form combining writing and visual beauty, considered one of the highest forms of Chinese art.",
-    },
-    {
-      id: "tea-ceremony",
-      category: "heritage",
-      title: "Tea Ceremony Tradition",
-      image: heritageImage3,
-      intro: "Refined practice of preparing and serving tea, embodying harmony, respect, and tranquility in Chinese culture.",
     },
     {
       id: "opera",
