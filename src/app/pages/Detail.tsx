@@ -4,17 +4,28 @@ import { Button } from "../components/ui/button";
 import { Calendar, Share2, Facebook, Twitter, Link as LinkIcon } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { useState } from "react";
+import festivalImage1 from "../../imports/festival_1.jpg";
+import festivalImage2 from "../../imports/festival_2.jpg";
+import festivalImage3 from "../../imports/festival_3.jpg";
+import festivalImage4 from "../../imports/festival_4.jpg";
+import festivalImage5 from "../../imports/festival_5.jpg";
+import festivalImage6 from "../../imports/festival_6.jpg";
+import heritageImage1 from "../../imports/heritage_1.jpg";
+import heritageImage2 from "../../imports/heritage_2.jpg";
+import heritageImage3 from "../../imports/heritage_3.jpg";
+import heritageImage4 from "../../imports/heritage_4.jpg";
+import heritageImage5 from "../../imports/heritage_5.jpg";
+import heritageImage6 from "../../imports/heritage_6.jpg";
 
 export function Detail() {
   const { id } = useParams();
   const [activeSection, setActiveSection] = useState("origins");
 
-  // Mock data - in a real app this would come from a database or API
   const contentData: Record<string, any> = {
     "spring-festival": {
       title: "Spring Festival (Chinese New Year)",
       date: "Lunar New Year (January-February)",
-      image: "https://images.unsplash.com/photo-1707103620427-c64562d496f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwbmV3JTIweWVhciUyMGdhbGElMjBjZWxlYnJhdGlvbnxlbnwxfHx8fDE3NzMwNjk0NDV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: festivalImage1,
       sections: {
         origins: {
           title: "Origins",
@@ -37,7 +48,7 @@ export function Detail() {
     "lantern-festival": {
       title: "Lantern Festival",
       date: "15th day of Lunar New Year",
-      image: "https://images.unsplash.com/photo-1716955575640-b988ab09a037?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwbGFudGVybiUyMGZlc3RpdmFsJTIwbmlnaHR8ZW58MXx8fHwxNzcyOTUyNzI4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: festivalImage2,
       sections: {
         origins: {
           title: "Origins",
@@ -57,10 +68,102 @@ export function Detail() {
         },
       },
     },
+    "qingming-festival": {
+      title: "Qingming Festival",
+      date: "Early April",
+      image: festivalImage3,
+      sections: {
+        origins: {
+          title: "Origins",
+          content: "Qingming Festival, also known as Tomb-Sweeping Day, developed from ancient spring rituals connected with remembrance, renewal, and respect for ancestors. It became a time for families to visit burial sites, clean tombs, and honor those who came before them while also welcoming the arrival of spring.",
+        },
+        customs: {
+          title: "Customs & Traditions",
+          content: "Families commonly sweep tombs, offer flowers or food, burn incense, and spend time outdoors. The festival balances solemn remembrance with seasonal appreciation, so outings, kite flying, and walks through fresh spring landscapes are also part of the tradition.",
+        },
+        food: {
+          title: "Festival Foods",
+          content: "Many regions prepare qingtuan, green glutinous rice balls colored with mugwort or other spring herbs. These foods connect the festival to seasonal ingredients and represent freshness, continuity, and family memory.",
+        },
+        activities: {
+          title: "Related Activities",
+          content: "Modern Qingming activities often include family storytelling, cemetery visits, cultural lectures, and community discussions about ancestry. For student communities, it can also be a meaningful time to explore family history and cultural identity.",
+        },
+      },
+    },
+    "dragon-boat": {
+      title: "Dragon Boat Festival",
+      date: "5th day of the 5th lunar month",
+      image: festivalImage4,
+      sections: {
+        origins: {
+          title: "Origins",
+          content: "The Dragon Boat Festival is closely associated with Qu Yuan, a patriotic poet and minister from ancient China. According to tradition, local people raced boats to search for him and threw rice into the river, customs that later evolved into dragon boat racing and eating zongzi.",
+        },
+        customs: {
+          title: "Customs & Traditions",
+          content: "The festival is best known for dragon boat races, where teams paddle long decorated boats to the rhythm of drums. People also hang herbs such as mugwort and calamus, wear scented sachets, and participate in customs believed to protect health during summer.",
+        },
+        food: {
+          title: "Festival Foods",
+          content: "Zongzi, sticky rice dumplings wrapped in bamboo leaves, are the signature food. Fillings vary by region, from red bean and dates to pork belly, salted egg yolk, and mushrooms, showing the diversity of Chinese regional cuisine.",
+        },
+        activities: {
+          title: "Related Activities",
+          content: "Communities celebrate with boat races, cultural performances, zongzi-making workshops, and storytelling sessions about Qu Yuan. The festival is especially useful for exploring poetry, teamwork, and local food traditions together.",
+        },
+      },
+    },
+    "mid-autumn": {
+      title: "Mid-Autumn Festival",
+      date: "15th day of the 8th lunar month",
+      image: festivalImage5,
+      sections: {
+        origins: {
+          title: "Origins",
+          content: "Mid-Autumn Festival began as a harvest celebration centered on the full moon. Over time, legends such as Chang'e flying to the moon and Hou Yi shooting down the suns became part of the festival's cultural imagination.",
+        },
+        customs: {
+          title: "Customs & Traditions",
+          content: "Families gather to admire the full moon, share mooncakes, light lanterns, and express wishes for reunion. The round moon symbolizes completeness, making the festival one of the most important occasions for family connection.",
+        },
+        food: {
+          title: "Festival Foods",
+          content: "Mooncakes are the most iconic food, with fillings such as lotus seed paste, red bean, mixed nuts, and salted egg yolk. Other seasonal foods, including pomelo and taro, may also appear in regional celebrations.",
+        },
+        activities: {
+          title: "Related Activities",
+          content: "Common activities include lantern walks, poetry reading, mooncake tasting, and cultural games. Student groups often use the festival as a warm social event for sharing stories, food, and memories of home.",
+        },
+      },
+    },
+    "double-ninth": {
+      title: "Double Ninth Festival",
+      date: "9th day of the 9th lunar month",
+      image: festivalImage6,
+      sections: {
+        origins: {
+          title: "Origins",
+          content: "Double Ninth Festival takes place when both the month and day are nine, a number traditionally associated with yang energy and longevity. The festival has long been connected with health, protection, and respect for older generations.",
+        },
+        customs: {
+          title: "Customs & Traditions",
+          content: "People climb mountains, admire chrysanthemums, drink chrysanthemum wine, and spend time outdoors. In modern China, the festival is also linked with honoring elders and promoting intergenerational care.",
+        },
+        food: {
+          title: "Festival Foods",
+          content: "Chongyang cake is a traditional festival food, often layered and decorated to suggest rising higher. Chrysanthemum tea and other seasonal foods also reflect autumn's colors and flavors.",
+        },
+        activities: {
+          title: "Related Activities",
+          content: "The festival can be celebrated with hikes, tea gatherings, elder-care volunteer events, and conversations about longevity. It offers a thoughtful way to connect seasonal traditions with community service.",
+        },
+      },
+    },
     "forbidden-city": {
       title: "The Forbidden City",
       date: "Built 1406-1420",
-      image: "https://images.unsplash.com/photo-1674637966612-6c05d18e7bab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwdHJhZGl0aW9uYWwlMjBhcmNoaXRlY3R1cmUlMjB0ZW1wbGV8ZW58MXx8fHwxNzczMDE5MDA3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: heritageImage1,
       sections: {
         origins: {
           title: "Historical Background",
@@ -77,6 +180,121 @@ export function Detail() {
         activities: {
           title: "Visiting Today",
           content: "Now known as the Palace Museum, the Forbidden City is one of the most visited museums in the world. Visitors can explore the vast complex, view priceless artifacts including paintings, ceramics, and imperial treasures. Special exhibitions showcase different aspects of imperial life. Virtual tours and augmented reality experiences help bring the palace's history to life for modern visitors.",
+        },
+      },
+    },
+    calligraphy: {
+      title: "Chinese Calligraphy",
+      date: "Practiced for over 2,000 years",
+      image: heritageImage2,
+      sections: {
+        origins: {
+          title: "Historical Background",
+          content: "Chinese calligraphy grew from early writing systems carved on oracle bones and cast into bronze vessels. As scripts developed, writing became more than communication; it became a disciplined art form expressing rhythm, personality, and cultural refinement.",
+        },
+        customs: {
+          title: "Tools & Practice",
+          content: "The traditional tools are brush, ink, paper, and inkstone, often called the Four Treasures of the Study. Practitioners train through repeated strokes, balance, spacing, and breath-like movement, gradually building control and expression.",
+        },
+        food: {
+          title: "Cultural Meaning",
+          content: "Calligraphy is connected with education, self-cultivation, poetry, and moral character. A single written character can reveal energy, restraint, confidence, and the artist's inner state.",
+        },
+        activities: {
+          title: "Learning Today",
+          content: "Today, calligraphy appears in workshops, exhibitions, festival couplets, digital design, and personal practice. It remains one of the most accessible ways to experience Chinese visual culture directly.",
+        },
+      },
+    },
+    "tea-ceremony": {
+      title: "Tea Ceremony Tradition",
+      date: "A living tradition of daily culture",
+      image: heritageImage3,
+      sections: {
+        origins: {
+          title: "Historical Background",
+          content: "Tea has been part of Chinese life for centuries, moving from medicinal use to daily drinking, artistic appreciation, and social ritual. Different dynasties shaped tea preparation, from powdered tea to loose-leaf brewing.",
+        },
+        customs: {
+          title: "Ritual & Etiquette",
+          content: "Tea preparation values attention, patience, and respect. The choice of leaves, water temperature, teaware, pouring rhythm, and shared tasting all contribute to an atmosphere of calm hospitality.",
+        },
+        food: {
+          title: "Cultural Meaning",
+          content: "Tea culture reflects harmony between people, nature, and time. It is used to welcome guests, mark important conversations, and create quiet moments for reflection in everyday life.",
+        },
+        activities: {
+          title: "Experiencing Tea Culture",
+          content: "Tea tastings, teaware demonstrations, and guided brewing sessions help participants compare green, oolong, black, white, and pu'er teas while learning how geography and craft shape flavor.",
+        },
+      },
+    },
+    opera: {
+      title: "Chinese Opera",
+      date: "Traditional performing art",
+      image: heritageImage4,
+      sections: {
+        origins: {
+          title: "Historical Background",
+          content: "Chinese opera developed from music, dance, storytelling, martial arts, and regional performance traditions. Forms such as Peking opera became highly refined, combining symbolic movement with dramatic singing and elaborate staging.",
+        },
+        customs: {
+          title: "Performance Style",
+          content: "Opera performers use stylized gestures, vocal techniques, facial makeup, costumes, and choreography to communicate character and emotion. Colors and patterns in face painting often signal loyalty, courage, cunning, or dignity.",
+        },
+        food: {
+          title: "Cultural Meaning",
+          content: "Chinese opera preserves legends, moral stories, historical episodes, and regional languages. It offers audiences a way to experience literature, music, and visual symbolism in one performance.",
+        },
+        activities: {
+          title: "Experiencing Opera Today",
+          content: "Modern audiences encounter opera through theater performances, campus demonstrations, costume workshops, film clips, and makeup sessions that explain how each visual element supports the story.",
+        },
+      },
+    },
+    "great-wall": {
+      title: "The Great Wall",
+      date: "Built and rebuilt across many dynasties",
+      image: heritageImage5,
+      sections: {
+        origins: {
+          title: "Historical Background",
+          content: "The Great Wall refers to a network of walls, watchtowers, and fortifications constructed and rebuilt across centuries. It is most closely associated with frontier defense, communication, and the organization of imperial territory.",
+        },
+        customs: {
+          title: "Architecture & Function",
+          content: "The wall used local materials such as tamped earth, stone, and brick depending on region and period. Watchtowers, passes, and signal stations allowed soldiers to monitor movement and send messages across long distances.",
+        },
+        food: {
+          title: "Cultural Meaning",
+          content: "Today the Great Wall symbolizes endurance, collective effort, and the scale of Chinese historical imagination. It is both a military structure and a cultural landmark recognized around the world.",
+        },
+        activities: {
+          title: "Visiting Today",
+          content: "Visitors can hike restored sections, study construction techniques, and compare different wall landscapes. Educational programs often use the Great Wall to discuss engineering, history, and heritage preservation.",
+        },
+      },
+    },
+    "paper-cutting": {
+      title: "Chinese Paper Cutting",
+      date: "Traditional folk art",
+      image: heritageImage6,
+      sections: {
+        origins: {
+          title: "Historical Background",
+          content: "Chinese paper cutting became widespread after paper was invented and made more affordable. It developed as a folk art used in homes, festivals, weddings, and seasonal celebrations.",
+        },
+        customs: {
+          title: "Patterns & Techniques",
+          content: "Artists cut folded or flat paper into symmetrical designs, animals, flowers, zodiac symbols, and auspicious characters. Red paper is especially common because it represents joy and good fortune.",
+        },
+        food: {
+          title: "Cultural Meaning",
+          content: "Paper cutting turns everyday materials into symbols of blessing, beauty, and family celebration. Designs placed on windows and doors often express wishes for happiness, prosperity, and protection.",
+        },
+        activities: {
+          title: "Learning Today",
+          content: "Workshops often begin with simple folded patterns before moving to more detailed freehand designs. It is a practical, hands-on way for students to understand symbolism and folk creativity.",
         },
       },
     },
