@@ -1,0 +1,6 @@
+- [x] 首页两组词 previous- latest latest-upcoming
+- [x] festival和heritage两组照片替换 
+- [x] food照片替换
+- [x] updates按照首页替换 保留头图
+  - [x] 改剩下两个图片
+- [x] contact去掉头尾两部分 只保留中间两个部分
