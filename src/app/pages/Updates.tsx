@@ -42,14 +42,6 @@ export function Updates() {
     },
   ];
 
-  const popularArticles = [
-    "The History of Chinese New Year",
-    "Understanding Chinese Zodiac Animals",
-    "Traditional vs Modern Chinese Weddings",
-    "The Symbolism of Chinese Dragons",
-    "Five Elements in Chinese Culture",
-  ];
-
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header */}
@@ -107,28 +99,6 @@ export function Updates() {
 
             {/* Sidebar - Right */}
             <div className="space-y-8">
-              {/* Popular Articles */}
-              <Card className="border-gray-200">
-                <CardContent className="pt-6 pb-6">
-                  <h3 className="text-xl mb-4" style={{ color: "#D62828" }}>
-                    Popular Articles
-                  </h3>
-                  <div className="space-y-3">
-                    {popularArticles.map((article, index) => (
-                      <Link
-                        key={index}
-                        to="#"
-                        className="block p-3 rounded-lg hover:bg-gray-50 transition-colors border border-gray-200"
-                      >
-                        <p className="text-gray-700 text-sm hover:text-[#D62828]">
-                          {article}
-                        </p>
-                      </Link>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-
               {/* Newsletter Signup */}
               <Card className="border-2" style={{ borderColor: "#D62828" }}>
                 <CardContent className="pt-6 pb-6">
