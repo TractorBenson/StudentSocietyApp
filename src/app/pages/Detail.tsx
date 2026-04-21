@@ -1,9 +1,8 @@
 import { useParams, Link } from "react-router";
 import { Card, CardContent } from "../components/ui/card";
-import { Button } from "../components/ui/button";
-import { Calendar, Share2, Facebook, Twitter, Link as LinkIcon } from "lucide-react";
+import { Calendar } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import festivalImage1 from "../../imports/festival_1.jpg";
 import festivalImage2 from "../../imports/festival_2.jpg";
 import festivalImage3 from "../../imports/festival_3.jpg";
@@ -300,14 +299,43 @@ export function Detail() {
     },
   };
 
-  const content = contentData[id || ""] || contentData["spring-festival"];
+  const contentId = id && contentData[id] ? id : "spring-festival";
+  const content = contentData[contentId];
   const sections = ["origins", "customs", "food", "activities"];
 
-  const relatedArticles = [
-    { title: "Dragon Boat Festival", link: "/detail/dragon-boat" },
-    { title: "Mid-Autumn Festival", link: "/detail/mid-autumn" },
-    { title: "Chinese Calligraphy", link: "/detail/calligraphy" },
+  const festivalArticleIds = [
+    "spring-festival",
+    "lantern-festival",
+    "qingming-festival",
+    "dragon-boat",
+    "mid-autumn",
+    "double-ninth",
   ];
+  const heritageArticleIds = [
+    "tea-ceremony",
+    "forbidden-city",
+    "calligraphy",
+    "opera",
+    "great-wall",
+    "paper-cutting",
+  ];
+
+  const relatedArticleIds = festivalArticleIds.includes(contentId)
+    ? festivalArticleIds
+    : heritageArticleIds;
+
+  const relatedArticles = relatedArticleIds
+    .filter((articleId) => articleId !== contentId)
+    .slice(0, 3)
+    .map((articleId) => ({
+      title: contentData[articleId].title,
+      link: `/detail/${articleId}`,
+    }));
+
+  useEffect(() => {
+    setActiveSection("origins");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [contentId]);
 
   const scrollToSection = (sectionId: string) => {
     setActiveSection(sectionId);
@@ -391,44 +419,6 @@ export function Detail() {
               </Card>
             ))}
           </div>
-
-          {/* Share Buttons */}
-          <Card className="border-gray-200 mt-8">
-            <CardContent className="pt-6 pb-6">
-              <div className="flex items-center justify-between flex-wrap gap-4">
-                <h3 className="text-xl">Share this article</h3>
-                <div className="flex gap-3">
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="gap-2"
-                    style={{ borderColor: "#D62828", color: "#D62828" }}
-                  >
-                    <Facebook className="h-4 w-4" />
-                    Facebook
-                  </Button>
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="gap-2"
-                    style={{ borderColor: "#D62828", color: "#D62828" }}
-                  >
-                    <Twitter className="h-4 w-4" />
-                    Twitter
-                  </Button>
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="gap-2"
-                    style={{ borderColor: "#D62828", color: "#D62828" }}
-                  >
-                    <LinkIcon className="h-4 w-4" />
-                    Copy Link
-                  </Button>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
 
           {/* Related Articles */}
           <Card className="border-gray-200 mt-8">
