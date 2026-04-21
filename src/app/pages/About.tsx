@@ -1,6 +1,7 @@
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { Card, CardContent } from "../components/ui/card";
 import { Users, Target, Heart, Globe } from "lucide-react";
+import aboutImage from "../../imports/about.jpg";
 
 export function About() {
   const values = [
@@ -62,7 +63,7 @@ export function About() {
       {/* Hero Section */}
       <section className="relative h-[500px] flex items-center justify-center overflow-hidden">
         <ImageWithFallback
-          src="https://images.unsplash.com/photo-1523582407565-efee5cf4a353?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwc3R1ZGVudCUyMGdyb3VwJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzMwNjk5MzR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          src={aboutImage}
           alt="Chinese Cultural Hub Community"
           className="absolute inset-0 w-full h-full object-cover"
         />

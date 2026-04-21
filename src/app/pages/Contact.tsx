@@ -53,9 +53,9 @@ export function Contact() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative h-[400px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[500px] flex items-center justify-center overflow-hidden">
         <ImageWithFallback
-          src="https://images.unsplash.com/photo-1766407354000-54a7129f7140?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdWx0dXJhbCUyMGV2ZW50JTIwY29tbXVuaXR5JTIwZ2F0aGVyaW5nfGVufDF8fHx8MTc3MzA2OTkzNHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          src="https://images.unsplash.com/photo-1523582407565-efee5cf4a353?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwc3R1ZGVudCUyMGdyb3VwJTIwY29tbXVuaXR5JTIwbWVldGluZ3xlbnwxfHx8fDE3NzMwNjk5MzR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
           alt="Contact Us"
           className="absolute inset-0 w-full h-full object-cover"
         />
