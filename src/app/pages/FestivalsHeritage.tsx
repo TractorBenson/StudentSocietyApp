@@ -4,8 +4,9 @@ import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 
 import festivalImage1 from "../../imports/festival_1.jpg";
 import festivalImage2 from "../../imports/festival_2.jpg";
-import festivalImage3 from "../../imports/festival_3.jpg";
 import festivalImage4 from "../../imports/festival_4.jpg";
+import festivalImage5 from "../../imports/festival_5.jpg";
+
 import heritageImage1 from "../../imports/heritage_1.jpg";
 import heritageImage2 from "../../imports/heritage_2.jpg";
 import heritageImage3 from "../../imports/heritage_3.jpg";
@@ -41,18 +42,32 @@ export function FestivalsHeritage() {
       intro: "Celebrated on the 15th day of the first lunar month, featuring beautiful lantern displays and riddle-solving traditions.",
     },
     {
+      id: "qingming-festival",
+      category: "festivals",
+      title: "Qingming Festival",
+      image: festivalImage1,
+      intro: "A reflective spring festival for honoring ancestors, sweeping tombs, enjoying nature, and remembering family heritage.",
+    },
+    {
       id: "dragon-boat",
       category: "festivals",
       title: "Dragon Boat Festival",
-      image: festivalImage3,
+      image: festivalImage4,
       intro: "Ancient festival commemorating poet Qu Yuan, featuring exciting dragon boat races and traditional zongzi rice dumplings.",
     },
     {
       id: "mid-autumn",
       category: "festivals",
       title: "Mid-Autumn Festival",
-      image: festivalImage4,
+      image: festivalImage5,
       intro: "Harvest festival celebrating the full moon with mooncakes, family gatherings, and moon appreciation traditions.",
+    },
+    {
+      id: "double-ninth",
+      category: "festivals",
+      title: "Double Ninth Festival",
+      image: festivalImage2,
+      intro: "Celebrated on the ninth day of the ninth lunar month with mountain climbing, chrysanthemum appreciation, and respect for elders.",
     },
     {
       id: "forbidden-city",
@@ -81,6 +96,20 @@ export function FestivalsHeritage() {
       title: "Chinese Opera",
       image: heritageImage4,
       intro: "Traditional theatrical art form featuring elaborate costumes, makeup, and stylized performances combining music, dance, and acrobatics.",
+    },
+    {
+      id: "great-wall",
+      category: "heritage",
+      title: "The Great Wall",
+      image: heritageImage1,
+      intro: "One of China's most recognizable landmarks, reflecting centuries of engineering, defense strategy, and cultural memory.",
+    },
+    {
+      id: "paper-cutting",
+      category: "heritage",
+      title: "Chinese Paper Cutting",
+      image: heritageImage2,
+      intro: "A delicate folk art using red paper and symbolic patterns to express blessings, celebration, and everyday creativity.",
     },
   ];
 
