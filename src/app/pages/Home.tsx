@@ -97,25 +97,25 @@ export function Home() {
       image: "https://images.unsplash.com/photo-1765188987896-dfc20b28b6ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwdHJhZGl0aW9uYWwlMjB0ZWElMjBjZXJlbW9ueSUyMGN1bHR1cmV8ZW58MXx8fHwxNzc2NzMzOTM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       title: "The Ancient Art of Chinese Tea Culture",
       excerpt: "Exploring the philosophy and traditions behind China's beloved tea ceremony.",
-      link: "https://www.bbc.com/travel/article/20230815-chinas-ancient-tea-culture",
+      link: "https://cmjournal.biomedcentral.com/articles/10.1186/s13020-022-00571-1",
     },
     {
       image: "https://images.unsplash.com/photo-1578073273382-f847b29d2192?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwcmVkJTIwZW52ZWxvcGUlMjB0cmFkaXRpb24lMjBsdW5hciUyMG5ldyUyMHllYXJ8ZW58MXx8fHwxNzc2NzMzOTM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       title: "Red Envelopes: The Tradition of Hongbao",
       excerpt: "Understanding the cultural significance of red envelope giving during Lunar New Year.",
-      link: "https://www.chinahighlights.com/travelguide/festivals/red-envelopes.htm",
+      link: "https://www.history.com/articles/red-envelopes-chinese-new-year",
     },
     {
       image: "https://images.unsplash.com/photo-1728513012046-710053a92049?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwzfHxjaGluZXNlJTIwZHJhZ29uJTIwYm9hdCUyMGZlc3RpdmFsfGVufDF8fHx8MTc3NjczMzkzOHww&ixlib=rb-4.1.0&q=80&w=1080",
       title: "Dragon Boat Festival: A 2000-Year Tradition",
       excerpt: "The history and customs of one of China's most celebrated traditional festivals.",
-      link: "https://www.nationalgeographic.com/travel/article/dragon-boat-festival",
+      link: "https://www.britannica.com/topic/Dragon-Boat-Festival",
     },
     {
       image: "https://images.unsplash.com/photo-1640164096817-0d9544334087?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwdHJhZGl0aW9uYWwlMjB3ZWRkaW5nJTIwY3VzdG9tc3xlbnwxfHx8fDE3NzY3MzM5Mzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       title: "Traditional Chinese Wedding Customs Explained",
       excerpt: "From tea ceremonies to red wedding dresses, discover the rituals of Chinese weddings.",
-      link: "https://www.brides.com/chinese-wedding-traditions-and-customs-1216",
+      link: "https://www.theknot.com/content/ancient-chinese-wedding-traditions",
     },
   ];
 
